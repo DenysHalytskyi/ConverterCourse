@@ -1,0 +1,17 @@
+<!-- views/profile.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+<h1>Welcome <%= user.email %></h1>
+<p>Your current balance is: <%= user.balance %> USD</p>
+<form action="/top-up" method="POST">
+    <input type="number" name="amount" placeholder="Enter amount to top up">
+    <button type="submit">Top Up Balance</button>
+</form>
+</body>
+</html>

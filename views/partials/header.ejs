@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walutometr</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">Converter</a></li>
+      <li><a href="/exchange-rate">Exchange rates</a></li>
+      <% if (user) { %>
+        <li><a href="/top-up">Top up balance</a></li>
+        <li id="headBal">Balance: <%= user.balance %> PLN</li> 
+        <li id="headExit"><a href="/logout">Exit</a></li>
+      <% } else { %>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Registration</a></li>
+      <% } %>
+    </ul>
+  </nav>
+</header>

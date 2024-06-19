@@ -1,0 +1,53 @@
+<%- include('partials/header'); -%>
+
+<header>
+  <title>Informator walut</title>
+  <div class="crypto"></div>
+  <div class="headings">
+    <h2>CONVERTER</h2>
+ 
+<div class="converter">
+  <form id="currency-converter">
+    <div>
+      <label for="from-currency">From:</label>
+      <select id="from-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="CHF">CHF</option>
+        <option value="KRW">KRW</option>
+        <option value="INR">INR</option>
+        <option value="UAH">UAH</option>
+        <option value="CNY">CNY</option>
+        <option value="SEK">SEK</option>
+      </select>
+    </div>
+    <div>
+      <label for="from-amount">Amount:</label>
+      <input type="number" id="from-amount" placeholder="Enter amount">
+    </div>
+    <div>
+      <label for="to-currency">To:</label>
+      <select id="to-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="CHF">CHF</option>
+        <option value="KRW">KRW</option>
+        <option value="INR">INR</option>
+        <option value="UAH">UAH</option>
+        <option value="CNY">CNY</option>
+        <option value="SEK">SEK</option>
+      </select>
+    </div>
+    <div>
+      <label for="to-amount">Converted Amount:</label>
+      <input type="text" id="to-amount" readonly>
+    </div>
+  </form>
+</div>
+</div>
+</header>
+
+<script src="/converterHome.js"></script>
+<%- include('partials/footer'); -%>
